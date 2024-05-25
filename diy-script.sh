@@ -24,6 +24,15 @@ rm -rf feeds/luci/applications/luci-app-xlnetacc
 rm -rf feeds/luci/applications/luci-app-v2ray-server
 rm -rf feeds/luci/applications/luci-app-unblockmusic
 
+# VPN
+rm -rf feeds/luci/applications/luci-app-n2n
+rm -rf feeds/luci/applications/luci-app-softethervpn
+rm -rf feeds/luci/applications/luci-app-openvpn
+rm -rf feeds/luci/applications/luci-app-openvpn-server
+rm -rf feeds/luci/applications/luci-app-pptp-server
+rm -rf feeds/luci/applications/luci-app-ipsec-vpnd
+rm -rf feeds/luci/applications/luci-app-zerotier
+
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
